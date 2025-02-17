@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Roboto', sans-serif; 
+  }
+}
+
+@layer components {
+  /* Criando a linha abaixo do botão */
+  .navbar-button {
+    position: relative;
+  }
+
+  .navbar-button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #3498DB;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .navbar-button:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  /* Animação do texto */
+  .apresentacao-section__content-texts {
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+  }
+
+  /* Container da imagem do perfil */
+  .profile-image-container {
+    position: relative;
+    transform: translateX(50px);
+    opacity: 0;
+    animation: slideInRight 1s forwards;
+    animation-delay: 0.3s;
+    transition: transform 0.3s ease;
+  }
+
+  .profile-image-container img {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .profile-image-container:hover {
+    transform: translateY(-5px);
+  }
+
+  .profile-image-container::before {
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(45deg, #3498DB, #2C3E50);
+    border-radius: 50%;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    animation: rotate 10s linear infinite;
+  }
+
+  .cards__content-information {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .cards__content-information:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.15);
+  }
+
+  .learn-more {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .learn-more:hover {
+    color: #2980B9;
+  }
+
+  .learn-more img {
+    width: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .learn-more:hover img {
+    transform: translateX(5px);
+  }
+
+  /* Linha decorativa na seção de formações */
+  .formacoes-section {
+    position: relative;
+  }
+
+  .formacoes-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #3498DB, transparent);
+  }
+
+  /* Ajustes nos links do footer */
+  .footer-options a {
+    transition: all 0.3s ease-in-out;
+    }
+
+  .footer-options a:hover {
+    background-color: #3498DB;
+    transform: translateY(-5px);
+  }
+}
+
+@layer utilities {
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

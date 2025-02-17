@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+  <meta name="description" content="João Gomes - Portifólio">
+  <title>João Gomes - Portifólio</title>
+
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link href="CSS/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/media-queries.css">
+</head>
+
+<body class="body bg-[#ECF0F1] text-white font-roboto">
+    <!-- INÍCIO DO WEBSITE -->
+    <header class="bg-[#2C3E50] p-[1rem_0] fixed w-full top-0 z-100 shadow-custom">
+      <div class="header__content">
+          <div class="layout">
+            <nav class="header-navbar__content flex justify-between items-center max-w-[1200px] m-[0_auto] p-[0_2rem]">
+              <div class="header-navbar__content-text">
+                <a href="index.html" class="text-white text-[1.7rem] font-semibold hover:underline">
+                    João Gomes
+                </a>                
+              </div>
+          
+              <!-- Ícone do menu hamburguer -->
+              <div class="hamburger-menu flex flex-col gap-[6px] cursor-pointer p-[10px] md:hidden" role="button"> <!-- aria-label="Abrir menu" -->
+                  <span class="w-[30px] h-[3px] bg-white block transition-all duration-300 ease-in-out"></span>
+                  <span class="w-[30px] h-[3px] bg-white block transition-all duration-300 ease-in-out"></span>
+                  <span class="w-[30px] h-[3px] bg-white block transition-all duration-300 ease-in-out"></span>
+              </div>
+          
+              <!-- Wrapper para os botões (escondido no mobile) -->
+              <div class="navbar__buttons-wrapper flex md:flex gap-[2rem]">
+                  <div class="navbar__content-buttons">
+                      <button class="navbar-button bg-transparent border-none text-white p-[0.5rem_1rem] text-[1.1rem] cursor-pointer relative transition-all duration-300 ease-in-out"
+                          type="button" onclick="window.location.href='#sobre'">
+                          <span>Quem sou eu?</span>
+                      </button>
+                  </div>
+          
+                  <div class="navbar__content-buttons">
+                      <button class="navbar-button bg-transparent border-none text-white p-[0.5rem_1rem] text-[1.1rem] cursor-pointer relative transition-all duration-300 ease-in-out"
+                          type="button" onclick="window.location.href='#formacoes'">
+                          <span>Minhas formações</span>
+                      </button>
+                  </div>
+          
+                  <div class="navbar__content-buttons">
+                      <button class="navbar-button bg-transparent border-none text-white p-[0.5rem_1rem] text-[1.1rem] cursor-pointer relative transition-all duration-300 ease-in-out"
+                          type="button" onclick="window.location.href='#contato'">
+                          <span>Contato</span>
+                      </button>
+                  </div>
+              </div>
+          </nav>
+          
+          </div>
+      </div>
+  </header>
+
+
+    <!-- MAIN (PRINCIPAL) DO SITE -->
+    <main class="main">
+
+      <section class="apresentacao-section mt-[100px] pt-16 pb-16" id="sobre">
+        <div class="apresentacao-section__content max-w-[1200px] w-full mx-auto px-8 flex items-center justify-between gap-[4rem]">
+            <div class="apresentacao-section__content-texts flex-1 opacity-0">
+                <h1 class="text-[2.5rem] font-bold mb-[1.5rem] text-[#2C3E50]">Olá, seja bem-vindo!</h1>
+                <p class="text-[1.1rem] leading-[1.6] text-[#2C3E50]">
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquam dolor penatibus curae senectus vel eleifend morbi lectus.
+                    Natoque sollicitudin torquent gravida rhoncus urna, porttitor diam. Accumsan venenatis massa porttitor aenean velit.
+                    Rhoncus eu augue quam ullamcorper curae penatibus efficitur iaculis. Auctor dapibus vehicula mus tristique viverra eros scelerisque nisl.
+                    Integer lorem nascetur porttitor, pretium aenean rutrum ante. Condimentum nisl nascetur mus feugiat lectus varius.
+                </p>
+            </div>
+            <div class="profile-image-container flex relative opacity-0">
+                <img src="img/image.png" alt="Imagem de perfil" class="w-[300px] h-[300px] rounded-full border-[5px] border-white">
+            </div>
+        </div>
+    </section>
+    
+    <section class="formacoes-section py-16 bg-white" id="formacoes">
+        <div class="formacoes__content max-w-[1200px] mx-auto px-8">
+            <div class="cards__content-inicio text-center mb-[3rem]">
+                <h1 class="text-[2.4rem] text-[#2C3E50] font-bold">Minhas formações</h1>
+                <p class="text-[1.1rem] text-[#2C3E50]">Confira as minhas principais formações!</p>
+            </div>
+    
+            <div class="cards__content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
+                <article class="cards__content-information bg-white p-[2rem] rounded-[15px] flex flex-col justify-between">
+                    <div class="cards__content-texts mb-[1.5rem]">
+                      <h1 class="text-[1.5rem] mb-7 text-[#2C3E50] font-semibold">Gestão Comercial (UNINASSAU)</h1>
+                        <p class="text-[1rem] leading-[1.6] text-[#2C3E50]">
+                            Lorem ipsum odor amet, consectetuer adipiscing elit. Magna habitasse facilisi metus fames pharetra torquent.
+                            Auctor ultricies lacinia diam nec blandit torquent inceptos dui. Ac ut sagittis commodo rutrum ornare ultricies dolor.
+                        </p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-gomes-c-j%C3%BAnior-a6b8b2125/details/education/" class="learn-more flex items-center gap-[0.5rem] text-[#3498DB] font-semibold">
+                        Saiba mais <img class="new-tab w-[12px]" src="img/new-tab.svg" alt="Ícone de nova aba">
+                    </a>
+                </article>
+    
+                <article class="cards__content-information bg-white p-[2rem] rounded-[15px] flex flex-col justify-between">
+                    <div class="cards__content-texts mb-[1.5rem]">
+                        <h1 class="text-[1.5rem] mb-7 text-[#2C3E50] font-semibold">Técnico em Gestão da Produção (SENAI/CE)</h1>
+                        <p class="text-[1rem] leading-[1.6] text-[#2C3E50]">
+                            Lorem ipsum odor amet, consectetuer adipiscing elit. Magna habitasse facilisi metus fames pharetra torquent.
+                            Auctor ultricies lacinia diam nec blandit torquent inceptos dui. Ac ut sagittis commodo rutrum ornare ultricies dolor.
+                        </p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-gomes-c-j%C3%BAnior-a6b8b2125/details/education/" class="learn-more flex items-center gap-[0.5rem] text-[#3498DB] font-semibold">
+                        Saiba mais <img class="new-tab w-[12px]" src="img/new-tab.svg" alt="Ícone de nova aba">
+                    </a>
+                </article>
+    
+                <article class="cards__content-information bg-white p-[2rem] rounded-[15px] flex flex-col justify-between">
+                    <div class="cards__content-texts mb-[1.5rem]">
+                        <h1 class="text-[1.5rem] mb-7 text-[#2C3E50] font-semibold">Mecânica Industrial (CENTEC)</h1>
+                        <p class="text-[1rem] leading-[1.6] text-[#2C3E50]">
+                            Lorem ipsum odor amet, consectetuer adipiscing elit. Magna habitasse facilisi metus fames pharetra torquent.
+                            Auctor ultricies lacinia diam nec blandit torquent inceptos dui. Ac ut sagittis commodo rutrum ornare ultricies dolor.
+                        </p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-gomes-c-j%C3%BAnior-a6b8b2125/details/education/" class="learn-more flex items-center gap-[0.5rem] text-[#3498DB] font-semibold">
+                        Saiba mais <img class="new-tab w-[12px]" src="img/new-tab.svg" alt="Ícone de nova aba">
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>    
+  </main>
+
+  <footer id="contato">
+        <div class="footer__content bg-[#2C3E50] p-[2rem_0] w-full">
+            <div class="footer__content-options max-w-[1200px] m-[0_auto] p-[0_1rem] flex flex-col items-center gap-[1rem]">
+                <div class="footer__content-texts text-center">
+                    <h1 class="text-white font-extrabold text-[2.6rem] pb-[10px]">Contatos</h1>
+                    <p class="text-white text-[1.3rem]">Entre em contato comigo!</p>
+                </div>
+                <nav class="footer-options flex justify-center gap-[2rem]">
+                    <a class="flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white" 
+                    href="https://www.linkedin.com/in/jo%C3%A3o-gomes-c-j%C3%BAnior-a6b8b2125/" 
+                    target="_blank">
+                        <img class="w-[24px] h-[24px]" src="img/icon-linkedin.svg" alt="LinkedIn Icon">
+                    </a>
+                    <a class="flex items-center justify-center w-[40px] h-[40px] rounded-full bg-white" 
+                    href="mailto:jgomes092008@gmail.com" 
+                    target="_blank">
+                        <img class="w-[24px] h-[24px]" src="img/mailto.svg" alt="Mail">
+                    </a>
+                </nav>
+                <div class="legal-text text-center">
+                    <h3 class="text-[0.9rem] font-normal">&copy; Todos os direitos reservados.</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+  <script src="JavaScript/cards.js"></script>
+  <script src="JavaScript/navbar-responsiva.js"></script>
+</body>
+</html>
