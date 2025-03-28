@@ -2,10 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const navbarButtonsWrapper = document.querySelector('.navbar__buttons-wrapper');
     
-    // Verificação de console para debug
-    console.log('Hamburger Menu Element:', hamburgerMenu);
-    console.log('Navbar Buttons Wrapper:', navbarButtonsWrapper);
-    
     if (hamburgerMenu && navbarButtonsWrapper) {
         hamburgerMenu.addEventListener('click', function() {
             console.log('Menu hamburguer clicado');
